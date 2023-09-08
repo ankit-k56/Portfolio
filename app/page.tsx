@@ -5,6 +5,7 @@ import Hero from '@/components/Hero'
 import Talk from '@/components/Talk'
 import Contact from '@/components/Contact'
 import Projects from '@/components/Projects'
+import AnimatedBg from '@/components/AnimatedBg'
 import About from '@/components/About'
 
 const page = () => {
@@ -12,10 +13,10 @@ const page = () => {
     <div className=''>
       
       <Hero/>
+      <About/>
       <Skills/>
       <Talk/>
       <Projects/>
-      <About/>
       <Contact/>
     </div>
   )

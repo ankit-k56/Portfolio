@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
+import AnimatedBg from './AnimatedBg'
 
 const Hero = () => {
   return (
     <div className="">
       <Navbar/>
-    <div className="w-full h-full flex   items-center pt-40 pl-52  pb-36">
-    <div className='text-4xl font-medium space-y-6'>
+      <AnimatedBg/>
+    <div className="w-full h-full flex   items-center pt-40 pl-10 md:pl-52  pb-36">
+    <div className='text-2xl md:text-4xl font-medium space-y-6'>
       <h1>Hello,</h1>
       <h1>I am <span className='text-emerald-500'>Ankit,</span></h1>
       <h1>Full Stack Web Developer</h1>

@@ -2,12 +2,20 @@
 import {useEffect} from 'react'
 import React from 'react'
 // import {Github} from 'lucide-react'
+import Link from 'next/link'
 import { useInView,motion, useAnimate } from 'framer-motion'
 import Image from 'next/image';
 import { ImGithub } from 'react-icons/Im';
 import { AiOutlineLink} from 'react-icons/Ai';
+interface Project{
+  title : string,
+  description: string,
+  github: string,
+  link : string,
+  image: string
+}
 
-const ProjectCard = () => {
+const ProjectCard : React.FC<Project>= ({title,description,github,link,image}) => {
   // const [scope, animate] = useAnimate()
   // const [scope2, animate2] = useAnimate()
   // const isInView = useInView(scope,{ once: false })
@@ -22,23 +30,25 @@ const ProjectCard = () => {
 //     }
 //  }, [isInView])
   return (
-    <div className='flex  p-20 gap-8'>
+    <div className='flex flex-col-reverse  border-[1px] bg-zinc-950 rounded-xl sm:flex-row  p-8 md:p-12 lg:p-20 gap-4 sm:gap-8'>
       
-    <div >
-      <div className='flex gap-1'>
-      <div className='w-[15px] h-[48px] bg-emerald-500 text-emerald-500'></div>
-      <div className='w-[15px] h-[28px] bg-emerald-500 text-emerald-500'></div>
+    <div className='flex justify-between flex-col'>
+      <div>
+      <h1 className='text-2xl md:text-3xl py-2 text-emerald-500'>{title}</h1>
+      <p className='text-base '>{description}</p>
       </div>
-      <h1 className='text-3xl py-2 text-emerald-500'>Title of Project</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil sit in minima, incidunt molestias quia veniam beatae iste doloremque non qui animi quidem aperiam autem cumque pariatur consequatur blanditiis!
-      Fugit, iste, ducimus vero perspiciatis laboriosam nemo expedita atque neque velit sed enim unde itaque saepe voluptatum! Sed, sit eaque! Magni possimus eveniet unde porro illo, inventore quos reprehenderit atque!</p>
+      
       <div className='flex text-2xl gap-3 py-4 child:cursor-pointer '>
-      <ImGithub className='hover:text-emerald-500'/>
-      <AiOutlineLink className='text-[1.7rem] hover:text-emerald-500'/>
+        <Link href={github}>
+          <ImGithub className='hover:text-emerald-500'/>
+        </Link>
+        <Link href={link}>
+          <AiOutlineLink className='text-[1.7rem] hover:text-emerald-500'/>
+        </Link>
       </div>
       
     </div>
-      <Image  width={400} height={80} className='w-[45%]' src={'/stars.jpg'} alt='pic'/>
+      <Image  width={400} height={140} className='w-full sm:w-[45%] md:h-[300px] object-cover ' src={image} alt='pic'/>
 
     </div>
   )

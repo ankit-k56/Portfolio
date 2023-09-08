@@ -57,11 +57,13 @@ const Skillscard : React.FC<SkillsArray> = ({title,skills}) => {
     }
  }, [isInView])
   return (
+    <>
     <motion.div
     variants={card}
     initial={'hidden'}
+    className=''
     animate={controls2}>
-    <div ref={ref} className='text-center h-[340px] border-[1px] border-emerald-500 rounded-lg bg-[#111111] p-7 '>
+    <div ref={ref} className='text-center h-[60vh] sm:w-[60vw] md:w-[40vw] max-h-[300px] lg:max-h-[450px] lg:w-[25vw] border-[1px] border-stone-400 rounded-lg bg-[#111111] p-7 '>
         <h1 className='text-2xl pb-6 text-emerald-500' >{title}</h1>
         <ul className='  child:text-lg  flex child:p-[5px] flex-wrap items-center justify-center'>
            
@@ -86,6 +88,7 @@ const Skillscard : React.FC<SkillsArray> = ({title,skills}) => {
       </div>
 
       </motion.div>
+      </>
   )
 }
 

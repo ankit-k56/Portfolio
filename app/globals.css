@@ -18,9 +18,52 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: rgb(21, 21, 22);
+  background-color: #151516;
   /* padding: 10px; */
 }
 .jjk{
   background-color: #111111;
 }
+#tsparticles {
+  position: fixed;
+  height: 300px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.swiper-button-prev{
+  height: 5px;
+  width: 4px;
+}
+.swiper-button-prev {
+  background-image: url("/swiper-js/left-arrow.png");
+}
+.swiper-button-next {
+  background-image: url("/swiper-js/right-arrow.png");
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  /* padding: 5px; */
+  opacity: 0.8;
+  border-radius: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+}
+/* .swiper-button-prev::before{
+  width: 5px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0);
+} */
+/* ["#FF5A86", "#953AFE", "#FFC326", "#46C0FF"] */
+/* "#ff751a","#ffffff","#4d4dff", "#ffff1a" */
+/* "#ff751a","#ffffff","#4d4dff", "#ffff1a" */

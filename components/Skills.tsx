@@ -5,9 +5,9 @@ import { FRONTEND , BACKEND, TOOLS} from '@/constants/data'
 const Skills = () => {
   
   return (
-    <div className='p-24 px-32 mt-8'>
+    <div className='p-14 sm:p-24 lg:px-32 bg-[#151516]    '>
       <h1 className='text-2xl mb-16'><span className='text-emerald-500 text-4xl'>Skills</span> and Tools</h1>
-      <div className='flex justify-between gap-5 '>
+      <div className='flex flex-wrap  justify-around items-center gap-5  '>
       {/* <div className='text-center w-[40%] border-[1px] border-emerald-500 rounded-lg bg-stone-950 p-7 '>
         <h1 className='text-2xl pb-6'><span className='text-emerald-500' >Front</span>end</h1>
         <ul className='  child:text-lg  flex child:p-2 flex-wrap items-center justify-center'>
@@ -21,9 +21,18 @@ const Skills = () => {
             <li>CSS</li>
         </ul>
       </div> */}
+      <div>
+
       <Skillscard {...FRONTEND}/>
+      </div>
+      <div>
+
       <Skillscard {...BACKEND}/>
+      </div>
+      <div>
+
       <Skillscard {...TOOLS}/>
+      </div>
       {/* <div>
         <h1 className='text-2xl pb-6'><span className='text-emerald-500' >Back</span>end</h1>
         <ul className='child:py-[5px]  child:text-lg'>
