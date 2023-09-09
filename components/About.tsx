@@ -23,7 +23,7 @@ const About = () => {
       animate(scope.current, { opacity: 0, x:0 , y:-100},{ duration: 0.1})
       animate2(scope2.current, { opacity: 0, x:0, y:100 },{ duration: 0.1 })
     }
- }, [isInView])
+ }, [isInView,animate,animate2])
   return (
   
     <div id='about' className='flex flex-col md:flex-row px-10 lg:px-28 pt-10 items-center pb-28 bg-black' >

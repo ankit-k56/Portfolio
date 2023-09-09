@@ -14,7 +14,7 @@ const Hero = () => {
       <h1>Full Stack Web Developer</h1>
       <p className='text-base font-normal text-zinc-500'>Currently located in India In, I make things for Web</p>
 
-      <button className='bg-transparent text-lg px-12  py-4 border-[1px] border-emerald-500'>Let's get in touch!</button>
+      <button className='bg-transparent text-lg px-12  py-4 border-[1px] border-emerald-500'>{"Let's get in touch!"}</button>
     </div>
     </div>
     </div>

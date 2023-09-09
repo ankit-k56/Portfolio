@@ -54,7 +54,7 @@ const Skillscard : React.FC<SkillsArray> = ({title,skills}) => {
       controls2.start('hidden')
       // animate(scope.current, { opacity: 0, y:130 },{ duration: 0.7 })
     }
- }, [isInView])
+ }, [isInView,controls,controls2])
   return (
     <>
     <motion.div
