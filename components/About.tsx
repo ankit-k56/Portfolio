@@ -1,10 +1,10 @@
 "use client"
 import {useEffect} from 'react'
-import {CiLinkedin} from 'react-icons/Ci'
-import {BiLogoInstagram} from 'react-icons/Bi'
-import { AiOutlineLink} from 'react-icons/Ai';
-import { BiLogoGithub } from 'react-icons/Bi';
-import {RiTwitterXLine}  from 'react-icons/Ri'
+import {CiLinkedin} from 'react-icons/ci'
+import {BiLogoInstagram} from 'react-icons/bi'
+import { AiOutlineLink} from 'react-icons/ai';
+import { BiLogoGithub } from 'react-icons/bi';
+import {RiTwitterXLine}  from 'react-icons/ri'
 import Link from 'next/link';
 import React from 'react'
 import Image from 'next/image'

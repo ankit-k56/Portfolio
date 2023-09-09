@@ -3,10 +3,10 @@ import {useEffect} from 'react'
 import React from 'react'
 // import {Github} from 'lucide-react'
 import Link from 'next/link'
-import { useInView,motion, useAnimate } from 'framer-motion'
+// import { useInView,motion, useAnimate } from 'framer-motion'
 import Image from 'next/image';
-import { ImGithub } from 'react-icons/Im';
-import { AiOutlineLink} from 'react-icons/Ai';
+import { ImGithub } from 'react-icons/im';
+import { AiOutlineLink} from 'react-icons/ai';
 interface Project{
   title : string,
   description: string,
