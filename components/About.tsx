@@ -23,7 +23,7 @@ const About = () => {
       animate(scope.current, { opacity: 0, x:0 , y:-100},{ duration: 0.1})
       animate2(scope2.current, { opacity: 0, x:0, y:100 },{ duration: 0.1 })
     }
- }, [isInView,animate,animate2])
+ }, [isInView,animate,animate2,scope,scope2])
   return (
   
     <div id='about' className='flex flex-col md:flex-row px-10 lg:px-28 pt-10 items-center pb-28 bg-black' >
@@ -32,7 +32,7 @@ const About = () => {
       <Image  ref={scope} className='rounded-full  mx-8 w-[45%] sm:py-0 py-3 sm:w-[35%] md:w-[25%]  object-cover items-center' src={'/Ank.jpg'} alt='me' width={280} height={660}></Image>
       <div  ref={scope2}>
         <h1 className='lg:text-3xl text-xl pb-5 font-semibold text-emerald-500'>About Me</h1>
-        <p className='text-sm lg:text-base'>I am a dedicated Full Stack developer proficient in the MERN (MongoDB, Express.js, React, Node.js) stack and specialized in Next.js. I am a second year B.Tech student in Computer Science and Engineering at KIIT University and am known for my quick learning abilities and strong work ethic. My passion is in creating exceptional web experiences, whether it's designing user-friendly interfaces, optimizing back-end processes, or ensuring seamless user interactions. With a commitment to staying at the forefront of web development technologies, I am here to transform your digital ideas into reality and help you achieve your full-stack development objectives</p>
+        <p className='text-sm lg:text-base'>{"I am a dedicated Full Stack developer proficient in the MERN (MongoDB, Express.js, React, Node.js) stack and specialized in Next.js. I am a second year B.Tech student in Computer Science and Engineering at KIIT University and am known for my quick learning abilities and strong work ethic. My passion is in creating exceptional web experiences, whether it's designing user-friendly interfaces, optimizing back-end processes, or ensuring seamless user interactions. With a commitment to staying at the forefront of web development technologies, I am here to transform your digital ideas into reality and help you achieve your full-stack development objectives"}</p>
       <div>
       
       <div className='flex py-4 items-center child:text-4xl gap-3 child:cursor-pointer'>
