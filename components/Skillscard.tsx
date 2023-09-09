@@ -1,7 +1,6 @@
 "use client"
 import {useEffect, useRef} from 'react'
 import React from 'react'
-import { FC } from 'react'
 import { useInView,motion, useAnimation,useAnimate } from 'framer-motion'
 import Skillbadge from './Skillbadge'
 interface Skills {
@@ -73,12 +72,13 @@ const Skillscard : React.FC<SkillsArray> = ({title,skills}) => {
                 <motion.div
                 // initial={{opacity:0, scale:0.7}}
                 variants={badge}
+                key={index}
                 initial={'hidden'}
                 animate={controls}
                 transition={{duration:0.16, delay:index*0.16}}
                 >
 
-                  <li   ><Skillbadge  {...skill}/></li> 
+                  <li   ><Skillbadge key={index} {...skill}/></li> 
                 </motion.div>
 
                 

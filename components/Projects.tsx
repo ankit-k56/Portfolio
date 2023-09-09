@@ -41,8 +41,8 @@ const Projects = () => {
       <SwiperSlide ><ProjectCard/></SwiperSlide>
       <SwiperSlide ><ProjectCard/></SwiperSlide> */}
       {
-        PROJECTS.map((project:any)=>{
-          return (<SwiperSlide>
+        PROJECTS.map((project:any,index)=>{
+          return (<SwiperSlide key={index}>
             <ProjectCard title={project.title} description={project.description} github={project.github} link={project.link} image={project.image}/>
           </SwiperSlide>)
         })
