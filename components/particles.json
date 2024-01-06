@@ -1,78 +1,78 @@
 {
-    "background": {
-      "color": "#000000"
+  "background": {
+    "color": "#000000"
+  },
+  "interactivity": {
+    "events": {
+      "onClick": {
+        "enable": false,
+        "mode": "push"
+      },
+      "onHover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "resize": true
     },
-    "interactivity": {
-      "events": {
-        "onClick": {
-          "enable": false,
-          "mode": "push"
-        },
-        "onHover": {
-          "enable": false,
-          "mode": "repulse"
-        },
-        "resize": true
+    "modes": {
+      "bubble": {
+        "distance": 400,
+        "duration": 2,
+        "opacity": 0.8,
+        "size": 40
       },
-      "modes": {
-        "bubble": {
-          "distance": 400,
-          "duration": 2,
-          "opacity": 0.8,
-          "size": 40
-        },
-        "push": {
-          "quantity": 4
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        }
-      }
-    },
-    "particles": {
-      "color": {
-        "value": ["#22c55e" ]
+      "push": {
+        "quantity": 4
       },
-      "links": {
-        "color": ["#22c55e"],
-        "distance": 170,
-        "enable": true,
-        "opacity": 0.5,
-        "width": 0.5
-      },
-      "collisions": {
-        "enable": true
-      },
-      "move": {
-        "direction": "InMode",
-        "enable": true,
-        "outMode": "bounce",
-        "random": false,
-        "speed": 3.5,
-        "straight": false
-      },
-      "number": {
-        "density": {
-          "enable": true
-        },
-        "value": 180
-      },
-      "opacity": {
-        "value": 0.7,
-        "anim": {
-            "enable": true,
-            "speed": 2,
-            "opacity_min": 0,
-            "sync": false
-          }
-      },
-      "shape": {
-        "type": "circle"
-      },
-      "size": {
-        "random": true,
-        "value": 3
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
       }
     }
+  },
+  "particles": {
+    "color": {
+      "value": ["#22c55e"]
+    },
+    "links": {
+      "color": ["#22c55e"],
+      "distance": 170,
+      "enable": true,
+      "opacity": 0.5,
+      "width": 0.5
+    },
+    "collisions": {
+      "enable": true
+    },
+    "move": {
+      "direction": "InMode",
+      "enable": true,
+      "outMode": "bounce",
+      "random": false,
+      "speed": 3.5,
+      "straight": false
+    },
+    "number": {
+      "density": {
+        "enable": true
+      },
+      "value": 180
+    },
+    "opacity": {
+      "value": 0.7,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "size": {
+      "random": true,
+      "value": 3
+    }
   }
+}
