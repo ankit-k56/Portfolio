@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="h-[105vh] ">
       <Navbar />
-      {/* <AnimatedBg /> */}
+      <AnimatedBg /> 
       <div className="w-full h-full flex   items-center pt-40 pl-10 md:pl-52  pb-36">
         <div className="text-2xl md:text-4xl font-medium space-y-6">
           <h1>Hello,</h1>
