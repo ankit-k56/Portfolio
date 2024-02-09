@@ -9,16 +9,16 @@ import "swiper/css/bundle";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/pagination";
-// import "swiper/swiper-bundle.min.css";
 
 const Projects = () => {
   return (
-    <div id="projects" className="p-3 py-16 md:p-16 bg-[#151516]">
-      <h1 className="pl-10 md:pl-0 py-6 text-3xl sm:text-3xl">
+    <div id="projects" className="p-3 py-16 text-center md:p-16 bg-[#151516]">
+      {/* <div className="max-w-[2000px] flex"> */}
+      <h1 className=" py-6 mb-10 text-3xl sm:text-3xl">
         My <span className="text-4xl text-emerald-500"> Projects</span>
       </h1>
       <Swiper
-        className="p-28"
+        className="p-28 "
         spaceBetween={10}
         autoplay={{
           delay: 5500,
@@ -26,8 +26,6 @@ const Projects = () => {
         }}
         slidesPerView={1}
         navigation={true}
-        //   onSlideChange={() => console.log('slide change')}
-        //   onSwiper={(swiper) => console.log(swiper)}
         mousewheel={true}
         pagination={true}
         modules={[Autoplay, Navigation, Pagination]}
@@ -49,6 +47,7 @@ const Projects = () => {
           );
         })}
       </Swiper>
+      {/* </div> */}
     </div>
   );
 };
