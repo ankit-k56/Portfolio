@@ -12,13 +12,16 @@ const AnimatedBg = () => {
     await loadFull(engine);
   }, []);
   return (
-    <div className="h-[]">
+ 
       <Particles
         options={particlesOptions as ISourceOptions}
+        className="z-[-50] absolute top-0 left-0 h-[100vh] w-[100vw]"
         init={particlesInit}
       />
-    </div>
+
   );
 };
 
 export default AnimatedBg;
+
+

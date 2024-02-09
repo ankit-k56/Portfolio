@@ -71,7 +71,7 @@ const Skillscard: React.FC<SkillsArray> = ({ title, skills }) => {
       >
         <div
           ref={ref}
-          className="text-center h-[60vh] sm:w-[60vw] md:w-[40vw] max-h-[300px] lg:max-h-[450px] lg:w-[25vw] border-[1px] border-stone-400 rounded-lg bg-[#111111] p-7 "
+          className="text-center h-[60vh]  max-w-[500px] sm:w-[60vw] md:w-[40vw] max-h-[400px] lg:max-h-[450px] lg:w-[25vw] border-[1px] border-stone-400 rounded-lg bg-[#111111] p-7 "
         >
           <h1 className="text-2xl xl:text-3xl pb-6 text-emerald-500">
             {title}

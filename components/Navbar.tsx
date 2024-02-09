@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import NavMobile from "./NavMobile";
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 const Navbar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -11,18 +13,18 @@ const Navbar = () => {
   };
   return (
     <div className="flex justify-between max-w-[1200px] mx-auto p-6 ">
-      <h1 className="text-2xl ">
+      <h1 className="text-lg lg:text-2xl ">
         ankitkumar19041@gmail<span className="text-emerald-500">.com</span>
       </h1>
 
-      <div className="relative md:hidden">
+      <div className="flex items-center  md:hidden">
         <button
           onClick={toggleMovileNav}
-          className="absolute top--6 right-[-8px]"
+          className=""
         >
-          nav
+          <RxHamburgerMenu  className='text-2xl'/>
         </button>
-        <NavMobile showMobileNav={showMobileNav} />
+        <NavMobile showMobileNav={showMobileNav}  setShowMobileNav={setShowMobileNav}/>
       </div>
 
       <div className="hidden md:block">

@@ -5,22 +5,11 @@ import { FRONTEND , BACKEND, TOOLS} from '@/constants/data'
 const Skills = () => {
   
   return (
-    <div className='p-14 sm:p-24 lg:px-32 bg-[#151516]    '>
+    <div className='p-14 sm:p-24 flex items-center justify-center lg:px-32 bg-[#151516]  '>
+      <div className='max-w-[2000px]'>
       <h1 className='text-2xl mb-16'><span className='text-emerald-500 text-4xl'>Skills</span> and Tools</h1>
       <div className='flex flex-wrap  justify-around items-center gap-5  '>
-      {/* <div className='text-center w-[40%] border-[1px] border-emerald-500 rounded-lg bg-stone-950 p-7 '>
-        <h1 className='text-2xl pb-6'><span className='text-emerald-500' >Front</span>end</h1>
-        <ul className='  child:text-lg  flex child:p-2 flex-wrap items-center justify-center'>
-            <li className='text-emerald-500'>React</li>
-            <li>Next.js</li>
-            <li>Tailwind Css</li>
-            <li>Material Ui</li>
-            <li>Shandcn ui</li>
-            <li>Figma</li>
-            <li>HTML5</li>
-            <li>CSS</li>
-        </ul>
-      </div> */}
+
       <div>
 
       <Skillscard {...FRONTEND}/>
@@ -60,6 +49,7 @@ const Skills = () => {
             
         </ul>
       </div> */}
+      </div>
       </div>
 
     </div>
